@@ -9,11 +9,11 @@ export enum UserRole {
   guest = 'guest',
 }
 
-// Замініть наступний код на версію за допомогою Record
-const RoleDescription = {
+// Використовуємо Record замість звичайного об'єкта
+const RoleDescription: Record<UserRole, string> = {
   admin: 'Admin User',
   editor: 'Editor User',
   guest: 'Guest User',
 };
 
-export {};
+export { };
